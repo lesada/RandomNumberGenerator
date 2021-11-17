@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Number Generator</title>
 </head>
+
 <body>
-    Hi there, this is the body
+    <h1>Random Number Generator</h1>
+    <form>
+        <fieldset>
+            <legend>Choose the range of random numbers</legend>
+            <label for="min">Min:</label>
+            <input type="text" name="min" id="min">
+            <label for="max">Max:</label>
+            <input type="text" name="max" id="max">
+            <button type="button" onClick="generate()">Generate</button>
+        </fieldset>
+    </form>
+    <div id="result">
+        <p>Result:</p>
+
+    </div>
+
+
 </body>
+<script src="script.js"></script>
 </html>
