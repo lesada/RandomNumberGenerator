@@ -36,13 +36,13 @@
             </div>
 
             <div>
-                <input type="checkbox" id="decimalNumbers" name="decimalNumbers" class="mb-4">
+                <input type="checkbox" id="decimalNumbers" name="decimalNumbers" class="mb-4" onClick="enablePlaces()">
                 <label for="decimalNumbers">Allow Decimal Numbers?</label>
             </div>
 
             <div class="input-group input-group-sm col-2">
                 <label for="decimalPlaces" class="input-group-text">Decimal Places:</label>
-                <input type="text" id="decimalPlaces" name="decimalPlaces" class="form-control">
+                <input type="text" id="decimalPlaces" name="decimalPlaces" class="form-control" disabled>
             </div>
         </fieldset>
         <button type="button" class="btn btn-dark btn-lg mt-4 mb-3" onClick="generate()">Generate</button>

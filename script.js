@@ -26,3 +26,10 @@ function generate() {
     document.getElementById("result").innerHTML = `Result: ${randomNumber}`;
 
 }
+
+function enablePlaces() {
+    if(decimal.checked === true)
+    decimalPlaces.disabled = false;
+    else
+    decimalPlaces.disabled = true;
+}
