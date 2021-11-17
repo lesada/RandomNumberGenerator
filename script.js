@@ -8,8 +8,14 @@ let decimalPlaces = document.getElementById("decimalPlaces");
 function generate() {
     let minValue = parseInt(min.value);
     let maxValue = parseInt(max.value);
-    let decimalPlacesValue = parseInt(decimalPlaces.value);
+
     let randomNumber;
+    let decimalPlacesValue
+
+    if(decimalPlaces.value > 0) 
+    decimalPlacesValue = parseInt(decimalPlaces.value);
+    else
+    alert("Please insert a valid number")
 
     if (!minValue || !maxValue)
         alert("Please insert values")
