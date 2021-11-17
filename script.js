@@ -13,8 +13,10 @@ function generate() {
 
     if(!minValue || !maxValue)
         alert("Please insert values")
-    if (minValue > maxValue) 
+    else if (minValue > maxValue) 
         alert("Min value must be less than max value");
+    else if (!negative.checked && (minValue < 0 || maxValue < 0))
+        alert("Check the negative numbers option");
     else if (decimal.checked === true) {
         randomNumber = parseFloat(Math.random() * (maxValue - minValue) + minValue).toFixed(decimalPlacesValue);
     }
