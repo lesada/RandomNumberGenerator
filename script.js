@@ -23,6 +23,8 @@ function generate() {
     else {
         randomNumber = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
     }
+
+    if(randomNumber)
     document.getElementById("result").innerHTML = `Result: ${randomNumber}`;
 
 }
