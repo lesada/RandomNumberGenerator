@@ -28,22 +28,21 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset>
+        <fieldset class="col-12">
             <legend class="options">Options:</legend>
             <div class="mb-2">
                 <input type="checkbox" id="negativeNumbers" name="negativeNumbers">
                 <label for="negativeNumbers">Allow Negative Numbers?</label>
             </div>
-            <div>
-                <div>
-                    <input type="checkbox" id="decimalNumbers" name="decimalNumbers" class="mb-4">
-                    <label for="decimalNumbers">Allow Decimal Numbers?</label>
-                </div>
-                <div class="input-group input-group-sm">
-                    <label for="decimalPlaces" class="input-group-text">Decimal Places:</label>
-                    <input type="text" id="decimalPlaces" name="decimalPlaces" class="input-group-text">
-                </div>
 
+            <div>
+                <input type="checkbox" id="decimalNumbers" name="decimalNumbers" class="mb-4">
+                <label for="decimalNumbers">Allow Decimal Numbers?</label>
+            </div>
+
+            <div class="input-group input-group-sm col-2">
+                <label for="decimalPlaces" class="input-group-text">Decimal Places:</label>
+                <input type="text" id="decimalPlaces" name="decimalPlaces" class="form-control">
             </div>
         </fieldset>
         <button type="button" class="btn btn-dark btn-lg mt-4 mb-3" onClick="generate()">Generate</button>
