@@ -1,5 +1,7 @@
 let min = document.getElementById("min");
 let max = document.getElementById("max");
+let negative = document.getElementById("negativeNumbers");
+let decimal = document.getElementById("decimalNumbers")
 
 function generate() {
 
@@ -13,6 +15,6 @@ function generate() {
     else {
         alert("Min value must be less than max value");
     }
-    document.getElementById("result").innerHTML = randomNumber;
+    document.getElementById("result").innerHTML = `Result: ${randomNumber}`;
 
 }
