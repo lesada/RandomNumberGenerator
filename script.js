@@ -12,10 +12,12 @@ function generate() {
     let randomNumber;
     let decimalPlacesValue
 
-    if(decimalPlaces.value > 0) 
-    decimalPlacesValue = parseInt(decimalPlaces.value);
+    if (decimal.checked === true) {
+        if ((decimalPlaces.value > 0))
+        decimalPlacesValue = parseInt(decimalPlaces.value);
     else
-    alert("Please insert a valid number")
+        alert("Please insert a valid number")
+    }
 
     if (!minValue || !maxValue)
         alert("Please insert values")
